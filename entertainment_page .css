@@ -1,0 +1,81 @@
+nav{
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: navy;
+    box-shadow: inset;
+    height: 250px;
+    width: 100px; 
+
+}
+nav ul{
+    margin:25px;
+}
+nav ul li a{
+    color: black;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.photos{
+    margin:15px;
+    border-color: 10px; 
+
+}
+
+.photos:hover {
+    box-shadow: 0 4px 8px black;
+    transform: scale(1.1);
+}
+
+.button_one{ 
+    color: black;
+    background-color: white;
+    border-width: 5px; 
+    border-color: black;
+    border-radius: 10px;
+}
+.button_one:hover{ 
+    box-shadow: 0 4px 8px black;
+    transform:scale(1.1);
+    background-color:greenyellow; 
+}
+
+#review-title { 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:red; 
+}
+
+
+.button_two{ 
+    color: black;
+    background-color: white;
+    border-width: 5px; 
+    border-color: black;
+    border-radius: 10px;
+}
+.button_two:hover{ 
+    box-shadow: 0 4px 8px black;
+    transform:scale(1.1);
+    background-color:gray; 
+}
+
+
+.text_box{
+    color: black;
+    background-color: white;
+    border: 5px, solid, black;
+    border-width: 5px;
+    border-radius: 7px; 
+}
+
+.text_box:hover{
+    border-width: 7px;
+    border-color: blue; 
+    
+}
