@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="entertainment_page" href="entertainment_page.css">
+    <link rel="stylesheet" href="entertainment_page.css">
     <title>Entertainment Page</title>
 </head>
 <body>
@@ -10,36 +11,47 @@
         <h1>Broadway Shows</h1>
     </header>
     <nav>
-        <ul>
+        <ul class="nav-menu">
             <li><a href="#home">Home</a></li>
-            <li><a href="#photos">Photos</a></li>
-            <li><a href="#videos">Services</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-<!--Add photos!!!!-->
-    <section class = "photos">
-        <img src="" alt="Les Miserables">
-        <figcaption>Les Miserables</figcaption>
-        <button class="button_one"><a href="">Listen In!</a></button>
-        <img src="" alt="Lion King">
-        <figcaption>Lion King</figcaption>
-        <button class="button_one"><a href="">Listen In!</a></button>
-        <img src="" alt="Phantom of the Opera">
-        <figcaption>Phantom of the Opera</figcaption>
-        <button class="button_one"><a href="">Listen In!</a></button>
-        <img src="" alt="Hamilton">
-        <figcaption>Hamilton</figcaption>
-        <button class="button_one"><a href="">Listen In!</a></button>
-        <img src="" alt="Wicked">
-        <figcaption>Wicked</figcaption>
-        <button class="button_one"><a href="">Listen In!</a></button>
+    
+
+    <section class="photos">
+        <div class="photo-item">
+            <img src="lesmis.jpg" alt="Les Miserables">
+            <figcaption>Les Miserables</figcaption>
+            <button class="button_one"><a href="#">Listen In!</a></button>
+        </div>
+        <div class="photo-item">
+            <img src="lionking.png" alt="Lion King">
+            <figcaption>Lion King</figcaption>
+            <button class="button_one"><a href="#">Listen In!</a></button>
+        </div>
+        <div class="photo-item">
+            <img src="phantom.jpg" alt="Phantom of the Opera">
+            <figcaption>Phantom of the Opera</figcaption>
+            <button class="button_one"><a href="#">Listen In!</a></button>
+        </div>
+        <div class="photo-item">
+            <img src="hamilton.jpg" alt="Hamilton">
+            <figcaption>Hamilton</figcaption>
+            <button class="button_one"><a href="#">Listen In!</a></button>
+        </div>
+        <div class="photo-item">
+            <img src="wicked.jpg" alt="Wicked">
+            <figcaption>Wicked</figcaption>
+            <button class="button_one"><a href="#">Listen In!</a></button>
+        </div>
     </section>
 
     <section>
-        <h2 id= "revew-title">Rate a Show</h2>
-        <form action="/rate-form" method = "post"></form>
-        <label for="dropdown">Choose a show:</label>
+        <h2 id="review-title">Rate a Show</h2>
+        <form action="/rate-form" method="post">
+            <label for="dropdown">Choose a show:</label>
             <select class="text_box" id="dropdown" name="options" multiple>
                 <option value="Les Meiserables">Les Meiserables</option>
                 <option value="Lion King">Lion King</option>
@@ -47,15 +59,60 @@
                 <option value="Hamilton">Hamilton</option>
                 <option value="Wicked">Wicked</option>
             </select>
-        <label for="stars">Rating (1-5):</label>
-        <input class="text_box" type="range" id ="stars" name="stars" min="0" max="5" step="1">
+            <label for="stars">Rating (1-5):</label>
+            <input class="text_box" type="range" id="stars" name="stars" min="0" max="5" step="1">
 
-        <label for="review">Write review: <label>    
-        <input class="text_box" type="text" id="review" name="review" placeholder="Enter your review">
-        
-        <button class= "button_two" type="submit">Submit</button>
-        
+            <label for="review">Write review:</label>
+            <input class="text_box" type="text" id="review" name="review" placeholder="Enter your review">
+            
+            <button class="button_two" type="submit">Submit</button>
         </form>
     </section>
+
+    <section class="registration-form">
+        <h2>Register</h2>
+        <form action="/register" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </section>
+    <section class="data-table">
+        <h2>Event Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10/11/2024</td>
+                    <td>Les Miserables</td>
+                    <td>Charleston Theater</td>
+                </tr>
+                <tr>
+                    <td>10/12/2024</td>
+                    <td>Lion King</td>
+                    <td>Main St. Theater</td>
+                </tr>
+                <tr>
+                    <td>10/13/2024</td>
+                    <td>Phantom of the Opera</td>
+                    <td>Broadway Theater</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
 </body>
 </html>

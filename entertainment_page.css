@@ -1,0 +1,183 @@
+
+nav {
+
+    border-radius: 10px;
+    box-shadow: inset;
+    height: 100px;
+    width: auto;
+}
+
+nav ul {
+    margin: 25px;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+
+.photos {
+    margin: 15px;
+}
+
+.photos img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.photos figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.button_one {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button_one:hover {
+    background-color: greenyellow;
+    
+}
+
+/* Review Form Styles */
+#review-title {
+    font-size: 20px;
+    color: red;
+    font-family: 'Times New Roman', serif;
+}
+
+.text_box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.text_box:hover {
+    border-color: blue;
+}
+
+.button_two {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button_two:hover {
+    background-color: gray;
+    box-shadow: 0 4px 8px black;
+}
+
+/* Registration Form Styles */
+.registration-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-form .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration-form .submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.nav-menu a:hover {
+    color: #ffcc00;
+}
+
+/* Data Table Styles */
+.data-table {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.data-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+    background-color: #f1f1f1;
+}
